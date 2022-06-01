@@ -28,6 +28,13 @@ In order to attach it your instance, Select the EBS volume you just created and 
 
 Once you click on attach volume it takes you to the next step below which is to select the instance to which you will like the EBS volume to be attached to,
 Once the instance has been selected, gp ahead and click on attach volume
-![image](https://user-images.githubusercontent.com/103466963/171445511-c2ff59df-82a8-4225-a3be-cf92958c9cdb.png)
 
+![image](https://user-images.githubusercontent.com/103466963/171446157-8af138f7-7f31-40ee-9eb0-004234e958b5.png)
 
+From the image below you can see that we have been able to succefully attach our EBS volume to An EC2 instance . 
+
+![image](https://user-images.githubusercontent.com/103466963/171446399-a4cb0412-76a9-4499-9c4c-6f22b73ebe50.png)
+
+# In Review
+You created a Standard EBS volume  and 
+Attached the Volume to an EC2 instance
