@@ -1,35 +1,33 @@
 # EBS_Lab
-# Create and attach an EBS volume to an EC2 instance.
-Once you login to AWS, click on services at the top of the screen and search for EC2. Click on the result to go to the main dashboard of EC2 service.
+# Create the Amazon EBS Volume
 
-![image](https://user-images.githubusercontent.com/103466963/171438988-931a2541-20ec-4b31-a45d-3c0f5f8afaf3.png)
+In the left menu of the EC2 dashboard select the Volume link in the Elastic Block Store section.
 
-This is the main dashboard of EC2 service. Scroll down and in the left panel click on Volume under Elastic Block Store.
+![image](https://user-images.githubusercontent.com/103466963/171442936-8ee4a1b2-34cf-4602-90cc-797be4d6c6b5.png)
 
-![image](https://user-images.githubusercontent.com/103466963/171439167-fa49460f-a425-422d-83ee-4166eed4d687.png)
+Click on create volume
 
-You will see the following screen. Here you may or may not see any existing volumes. As I already have an EC2 instance in my account the following listed EBS volume is attached to that existing EC2 instance. To create a new EBS volume click on "Create Volume".
+You can specify the size of your disk. Remember that you only have 30 Gb for your Free Tier. 
+Once you click on create volume, it takes you to the volume settings, where you get to specifiy the kind of EBS volume you want to attach to your instance, your disc size , region etc.
 
-![image](https://user-images.githubusercontent.com/103466963/171439386-dc0e5468-1897-4872-85f5-56fc71b91648.png)
+![image](https://user-images.githubusercontent.com/103466963/171444481-4d481bae-89d4-4e94-b08f-a0ab70c03f00.png)
 
+Click on create Volume as shown below to create your first EBS Volume
 
-Choose the type of volume that you want to create and specify the disk space that needs to be allocated to the volume. Select the Availability Zone. This should be the same as that of an EC2 instance to which this volume will be attached.
+![image](https://user-images.githubusercontent.com/103466963/171444799-c2008a78-d803-4f83-ac65-0241b93ec67d.png)
 
-You can skip other fields for now and proceed with "Create Volume"
+We have been able to create our first EBS (standard) with a disc size of 20GiB
+To name our EBS volume, click on the small square with a pen, call it ‘myFirstEBS’, then click on save changes
 
-![image](https://user-images.githubusercontent.com/103466963/171440212-0839be63-8fe4-476d-b0b8-358b8ac0474d.png)
+![image](https://user-images.githubusercontent.com/103466963/171445077-df9ec931-dc27-436a-99c3-ed3c1d4bc1c0.png)
 
-The creation will take some time and once the volume has been created you can see its status as "Available". Once the status of the volume changes to available it can be attached to the desired EC2 instance.
+# Attach the EBS Volume to the EC2 Instance
 
-![image](https://user-images.githubusercontent.com/103466963/171440501-1aeaba20-3917-433e-a303-99af2212130d.png)
+Your volume is now available but not yet attached to your EC2 instance. So, for the moment, it is available but not usable by your instance.
+In order to attach it your instance, Select the EBS volume you just created and click on action, then >Attach Volume men
 
-To attach this EBS volume to an EC2 instance, click on Actions --> Attach Volume.
-
-![image](https://user-images.githubusercontent.com/103466963/171441343-6721f42f-d308-48a1-ba21-eeaa92b6aaca.png)
-
-In the following screen specify the Instance ID of the EC2  instance to which this EBS volume needs to be attached. Make sure that your instance is also in the same availability zone in which you have created the volume. Click on "Attach" to proceed.
-
-![image](https://user-images.githubusercontent.com/103466963/171441492-03fdb8e2-fe49-4377-a868-3ea399c36fd1.png)
-
+Once you click on attach volume it takes you to the next step below which is to select the instance to which you will like the EBS volume to be attached to,
+Once the instance has been selected, gp ahead and click on attach volume
+![image](https://user-images.githubusercontent.com/103466963/171445511-c2ff59df-82a8-4225-a3be-cf92958c9cdb.png)
 
 
